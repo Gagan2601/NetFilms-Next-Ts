@@ -1,7 +1,6 @@
 import dbConn from "@/utils/dbConn";
 import Contact from "@/models/contact";
-import { NextApiRequest, NextApiResponse } from "next";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 interface ContactData {
     name: string;
@@ -10,7 +9,7 @@ interface ContactData {
     message: string;
 }
 
-export async function POST(req: NextApiRequest, res: NextApiResponse) {
+export async function POST(req: NextRequest, res: NextResponse) {
     try {
         const body: ContactData = await req.json();
         await dbConn();
