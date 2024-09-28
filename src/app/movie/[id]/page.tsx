@@ -25,7 +25,7 @@ const page: FC<PageProps> = async ({ params }) => {
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': process.env.RAPIDAPI_KEY || '',
+            'X-RapidAPI-Key': process.env.NEXT_PUBLIC_RAPIDAPI_KEY || '',
             'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
         }
     };

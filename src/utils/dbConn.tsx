@@ -9,7 +9,7 @@ interface CustomGlobal {
 
 declare const global: CustomGlobal;
 
-const MONGODB_URL = process.env.MONGODB_URL;
+const MONGODB_URL = process.env.NEXT_PUBLIC_MONGODB_URL;
 
 if (!MONGODB_URL) {
     throw new Error(

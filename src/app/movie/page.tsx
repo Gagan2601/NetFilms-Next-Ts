@@ -19,17 +19,18 @@ interface MovieData {
 
 const Movie = async () => {
   await new Promise(resolve => setTimeout(resolve, 2000));
-  const url: string = process.env.RAPIDAPI_URL || '';
+  const url: string = process.env.NEXT_PUBLIC_RAPIDAPI_URL || '';
   const options = {
     method: 'GET',
     headers: {
-      'X-RapidAPI-Key': process.env.RAPIDAPI_KEY || '',
+      'X-RapidAPI-Key': process.env.NEXT_PUBLIC_RAPIDAPI_KEY || '',
       'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
     }
   };
   const res: Response = await fetch(url, options);
   const data: { titles: MovieData[] } = await res.json();
   const main_data: MovieData[] = data.titles;
+  console.log(main_data);
   return (
     <>
       <section className={styles.movieSection}>
