@@ -1,143 +1,236 @@
-
-.section{
-    width: 100%;
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+.section {
+  width: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
 }
 
-.movieSection{
-    background-color: #fff!important;
+.movieSection {
+  background-color: #fff !important;
 }
 
-.container{
-    max-width: 140rem;
-    margin:0 auto;
-    padding: 6rem 3rem;
+.container {
+  max-width: none;
+  margin: 0 auto;
+  padding: 6rem 3rem;
 }
 
-.grid_two_section{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 60rem;
+.grid_two_section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 60rem;
 }
 
-.movieSection h1{
-    text-align: center;
-    margin-bottom: 3.2rem;
+.movieSection h1 {
+  text-align: center;
+  margin-bottom: 3.2rem;
 }
 
 .movie_title {
-    margin: 3.2rem 0 3.2rem 0;
+  margin: 3.2rem 0 3.2rem 0;
 }
 
-.movie_title span{
-     color: #e50914;
-    text-transform: capitalize;
+.movie_title span {
+  color: #e50914;
+  text-transform: capitalize;
 }
 
-.card_section{
-    width: 100%;
-    display: flex;
-    gap: 4.8rem;
-    justify-content: space-between;
-    align-items: center;
-    /*background-color: #90caf9;*/
-    flex-wrap: wrap;
+.card_section {
+  width: 100%;
+  display: flex;
+  gap: 4.8rem;
+  justify-content: space-between;
+  align-items: center;
+  /*background-color: #90caf9;*/
+  flex-wrap: wrap;
 }
 
-.card{
-    max-width: 26rem;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    border-radius: .8rem;
-    background-color: #fff;
+.card {
+  max-width: 26rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+  border-radius: 0.8rem;
+  background-color: #fff;
 }
 
-.card_image img{
-    max-width: 100%;
-    height: auto;
-    border-top-right-radius: .8rem;
-    border-top-left-radius: .8rem;
+.card_image img {
+  max-width: 100%;
+  height: auto;
+  border-top-right-radius: 0.8rem;
+  border-top-left-radius: 0.8rem;
 }
 
-.card_data{
-    padding: 1.2rem;
+.card_data {
+  padding: 1.2rem;
 }
 
-.card_data h2{
-    font-size: 2rem;
+.card_data h2 {
+  font-size: 2rem;
 }
 
-.card_data p{
-    margin: 1rem 0 2.4rem 0;
-    line-height: 1.6;
+.card_data p {
+  margin: 1rem 0 2.4rem 0;
+  line-height: 1.6;
 }
 
+.movie_page_container {
+  width: 100%;
+  padding: 2rem 3rem;
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  color: #333;
+  font-family: "Helvetica", sans-serif;
+}
+
+.movie_content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Image styling */
+.movie_image_style {
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Details section styling */
+.movie_details {
+  flex: 1;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  font-size: 3.5rem;
+}
+
+/* Movie title */
+.movie_details h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Synopsis paragraph */
+.movie_synopsis {
+  /* Adjust this size as needed */
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Styling for metadata such as release year and runtime */
+.movie_details p {
+  /* Slightly increase this for better readability */
+  margin-bottom: 0.8rem;
+  color: #666;
+}
+
+.actors_section {
+  margin-top: 1.5rem;
+}
+
+.actors_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.actor_item {
+  /* Slightly larger font for actors */
+  color: #444;
+  margin-bottom: 0.5rem;
+}
 
 /*not found page styling */
-.error_page{
-    width: 100%;
-    height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.error_page {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.error_page h2{
-    font-size: 4.8rem;
+.error_page h2 {
+  font-size: 4.8rem;
 }
-
 
 /*loading page style */
 
-.loading_section{
-    width: 100%;
-    height: 80vh;
-    display: grid;
-    place-items: center;
+.loading_section {
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  place-items: center;
 }
 
 .loading {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
 }
 
 .loading:after {
-    content: " ";
-    display: block;
-    border-radius: 50%;
-    width: 0;
-    height: 0;
-    margin: 8px;
-    box-sizing: border-box;
-    border: 32px solid #0000ff;
-    border-color: #0000ff transparent #0000ff transparent;
-    animation: loading 1.2s infinite;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid #0000ff;
+  border-color: #0000ff transparent #0000ff transparent;
+  animation: loading 1.2s infinite;
 }
 @keyframes loading {
-    0% {
-        transform: rotate(0);
-        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-    }
-    50% {
-        transform: rotate(900deg);
-        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-    100% {
-        transform: rotate(1800deg);
-    }
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
 }
 
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 2rem; /* Adjust padding to fit mobile */
+  }
 
+  .grid_two_section {
+    grid-template-columns: 1fr;
+  }
 
-@media screen and (max-width:768px) {
-    .grid_two_section{
-        grid-template-columns: 1fr;
-    }
+  .card_section {
+    justify-content: center;
+  }
+  .movie_content {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align for better visibility */
+  }
 
-    .card_section{
-        justify-content: center;
-    }
+  .movie_image_style {
+    max-width: 100%; /* Ensure the image fits within the screen */
+    margin-bottom: 2rem; /* Spacing between image and details */
+  }
 
+  .movie_details {
+    font-size: 2.5rem; /* Smaller font size for mobile */
+    padding: 1rem; /* Reduce padding for mobile */
+  }
 }
